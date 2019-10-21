@@ -1,0 +1,15 @@
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.csprojAssemblyReference.cache
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\MainWindow.g.cs
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\App.g.cs
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets_MarkupCompile.cache
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets_MarkupCompile.lref
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\MainWindow.baml
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.exe
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.pdb
+C:\Users\daxak\source\repos\pets\pets\bin\Debug\pets.exe.config
+C:\Users\daxak\source\repos\pets\pets\bin\Debug\pets.exe
+C:\Users\daxak\source\repos\pets\pets\bin\Debug\pets.pdb
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.g.resources
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.Properties.Resources.resources
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.csproj.GenerateResource.cache
+C:\Users\daxak\source\repos\pets\pets\obj\Debug\pets.csproj.CoreCompileInputs.cache
