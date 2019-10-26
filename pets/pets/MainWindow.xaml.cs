@@ -1,5 +1,7 @@
-﻿using System;
+﻿using pets.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,21 @@ namespace pets
     /// </summary>
     public partial class MainWindow : Window
     {
+        PetsContext db;
         public MainWindow()
         {
             InitializeComponent();
+
+            db = new PetsContext();
+            db.Animals.Load();
+            animalsGrid.ItemsSource = db.Animals.Local.ToBindingList();
+
+            this.Closing += MainWindow_Closing;
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            db.Dispose();
         }
     }
 }
