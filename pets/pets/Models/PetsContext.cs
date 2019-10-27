@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,14 @@ namespace pets.Models
 {
     class PetsContext: DbContext
     {
-        public PetsContext(): base("PetsConnection")
+        public PetsContext(): base(ConfigurationManager.ConnectionStrings["PetsConnection"].ConnectionString)
         {
 
         }
 
-        public DbSet<Types> Types { get; set; }
-        public DbSet<Size> Sizes { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<Animal> Animals { get; set; }
+        public DbSet<EntType> Types { get; set; }
+        public DbSet<EntSize> Sizes { get; set; }
+        public DbSet<EntOrder> Orders { get; set; }
+        public DbSet<EntAnimal> Animals { get; set; }
     }
 }

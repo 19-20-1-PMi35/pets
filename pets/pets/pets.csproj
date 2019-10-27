@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,11 +79,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Animal.cs" />
-    <Compile Include="Models\Order.cs" />
+    <Compile Include="Migrations\201910271144196_initial.cs" />
+    <Compile Include="Migrations\201910271144196_initial.designer.cs">
+      <DependentUpon>201910271144196_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910271205574_normalDB.cs" />
+    <Compile Include="Migrations\201910271205574_normalDB.designer.cs">
+      <DependentUpon>201910271205574_normalDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910271212134_norm name of tables.cs" />
+    <Compile Include="Migrations\201910271212134_norm name of tables.designer.cs">
+      <DependentUpon>201910271212134_norm name of tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\EntAnimal.cs" />
+    <Compile Include="Models\EntOrder.cs" />
     <Compile Include="Models\PetsContext.cs" />
-    <Compile Include="Models\Size.cs" />
-    <Compile Include="Models\Types.cs" />
+    <Compile Include="Models\EntSize.cs" />
+    <Compile Include="Models\EntType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -96,6 +110,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201910271144196_initial.resx">
+      <DependentUpon>201910271144196_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910271205574_normalDB.resx">
+      <DependentUpon>201910271205574_normalDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910271212134_norm name of tables.resx">
+      <DependentUpon>201910271212134_norm name of tables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -7,13 +8,17 @@ using System.Threading.Tasks;
 
 namespace pets.Models
 {
-    [Table("Order")]
-    class Order
+    [Table("tblOrder")]
+    public class EntOrder
     {
+        [Key]
         public int id { get; set; }
+        [Required]
         public string surname { get; set; }
+        [Required, DataType(DataType.PhoneNumber)]
         public string pnone { get; set; }
-        public string animalId { get; set; }
-        public Animal Animal { get; set; }
+        [ForeignKey("Animal")]
+        public int animalId { get; set; }
+        public EntAnimal Animal { get; set; }
     }
 }
