@@ -16,7 +16,7 @@ namespace pets.Models
         public int id { get; set; }
 
         public string name { get; set; } = "unknown";
-        [MinLength(0)]
+     
         public int age { get; set; } = 0;
         [Required]
         public string sex { get; set; }

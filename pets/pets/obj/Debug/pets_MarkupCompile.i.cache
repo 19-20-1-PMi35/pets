@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\pets\pets\pets\obj\Debug\
+C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\
 pets
 none
 false
 DEBUG;TRACE
-D:\pets\pets\pets\App.xaml
-11151548125
+C:\Users\daxak\Desktop\pets\pets\pets\App.xaml
+21154325455
 
-18281969091
-17941100262
-MainWindow.xaml;
+191997815873
+72-137679570
+MainWindow.xaml;PetForm.xaml;
 
-False
+True
 

@@ -34,6 +34,12 @@ namespace pets
             this.Closing += MainWindow_Closing;
         }
 
+        private void AddPet(object sender, RoutedEventArgs e)
+        {
+            PetForm petForm = new PetForm();
+            petForm.ShowDialog();
+        }
+
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             db.Dispose();
