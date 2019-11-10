@@ -13,13 +13,17 @@
             <Label>Age</Label>
             <TextBox Grid.Row="2" Name="Age" Margin="5"/>
             <Label>Size</Label>
-            <TextBox Grid.Row="3" Name="Size" Margin="5"/>
+            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Small" IsChecked="True"/>
+            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Medium" />
+            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Large" />
             <Label>Sex</Label>
-            <TextBox Grid.Row="3" Name="Sex" Margin="5"/>
+            <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="F" IsChecked="True"/>
+            <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="M" />
             <Label>Breed</Label>
             <TextBox Grid.Row="4" Name="Breed" Margin="5"/>
             <Label>Type</Label>
-            <TextBox Grid.Row="5" Name="Type" Margin="5"/>
+            <RadioButton Checked="Type_Checked" GroupName="Type" Content="Cat" IsChecked="True"/>
+            <RadioButton Checked="Type_Checked" GroupName="Type" Content="Dog" />
             <Label>Description</Label>
             <TextBox Grid.Row="5" Name="Description" Margin="5"/>
             <Button Grid.Row="6" Content="Add Pet" Margin="5" Click="AddPet"/>

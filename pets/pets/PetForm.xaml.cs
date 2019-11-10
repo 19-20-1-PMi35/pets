@@ -20,6 +20,9 @@ namespace pets
     /// </summary>
     public partial class PetForm : Window
     {
+        public string sex { get; set; }
+        public string type { get; set; }
+        public string size { get; set; }
 
         public PetForm()
         {
@@ -29,22 +32,58 @@ namespace pets
         {
             String name = Name.Text;
             int age = Int32.Parse(Age.Text);
-            int size = Int32.Parse(Size.Text);
-            int type = Int32.Parse(Type.Text);
             String breed = Breed.Text;
             String description = Description.Text;
-            String sex = Sex.Text;
             EntAnimal animal = new EntAnimal();
             animal.name = name;
             animal.age = age;
-            animal.sizeId = size;
-            animal.typeId = type;
+            int size_id = 0;
+            if (size == "Small")
+            {
+                size_id = 1;
+            }else if (size == "Medium")
+            {
+                size_id = 2;
+            }
+            else
+            {
+                size_id = 3;
+            }
+            animal.sizeId = size_id;
+            int type_id = 0;
+            if (type == "Cat")
+            {
+                type_id = 2;
+            }else
+            {
+                type_id = 1;
+            }
+            animal.typeId = type_id;
             animal.breed = breed;
             animal.description = description;
-            animal.sex = sex;
+            animal.sex = sex;    
             PetsContext context = new PetsContext();
             context.Animals.Add(animal);
             context.SaveChanges();
+            this.Close();
+        }
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton ck = sender as RadioButton;
+            if (ck.IsChecked.Value)
+                sex = Convert.ToString(ck.Content);
+        }
+        private void Type_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton ck = sender as RadioButton;
+            if (ck.IsChecked.Value)
+                type = Convert.ToString(ck.Content);
+        }
+        private void Size_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton ck = sender as RadioButton;
+            if (ck.IsChecked.Value)
+                size = Convert.ToString(ck.Content);
         }
     }
 }
