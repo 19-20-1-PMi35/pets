@@ -71,3 +71,9 @@ C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
 C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\PetForm.g.cs
 C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\PetForm.baml
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignColors.dll
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignColors.pdb
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\App.baml

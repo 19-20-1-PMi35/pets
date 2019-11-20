@@ -28,7 +28,7 @@ namespace pets
             InitializeComponent();
 
             db = new PetsContext();
-            db.Animals.Load();
+            db.Animals.Load(); 
             animalsGrid.ItemsSource = db.Animals.Local.ToBindingList();
 
             this.Closing += MainWindow_Closing;
