@@ -28,10 +28,16 @@ namespace pets
             InitializeComponent();
 
             db = new PetsContext();
-            db.Animals.Load();
+            db.Animals.Load(); 
             animalsGrid.ItemsSource = db.Animals.Local.ToBindingList();
 
             this.Closing += MainWindow_Closing;
+        }
+
+        private void AddPet(object sender, RoutedEventArgs e)
+        {
+            PetForm petForm = new PetForm();
+            petForm.ShowDialog();
         }
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
