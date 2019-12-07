@@ -16,6 +16,8 @@ namespace pets.Models
         public int id { get; set; }
 
         public string name { get; set; } = "unknown";
+
+        public byte[] image { get; set; }
      
         public int age { get; set; } = 0;
         [Required]

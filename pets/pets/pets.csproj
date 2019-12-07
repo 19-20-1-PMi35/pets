@@ -116,6 +116,10 @@
     <Compile Include="Migrations\201910271212134_norm name of tables.designer.cs">
       <DependentUpon>201910271212134_norm name of tables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912071456243_AddImageField.cs" />
+    <Compile Include="Migrations\201912071456243_AddImageField.designer.cs">
+      <DependentUpon>201912071456243_AddImageField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EntAnimal.cs" />
     <Compile Include="Models\EntOrder.cs" />
@@ -146,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910271212134_norm name of tables.resx">
       <DependentUpon>201910271212134_norm name of tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912071456243_AddImageField.resx">
+      <DependentUpon>201912071456243_AddImageField.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
