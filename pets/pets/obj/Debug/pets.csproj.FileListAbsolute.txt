@@ -77,6 +77,7 @@ C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignColors.pdb
 C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\App.baml
+<<<<<<< HEAD
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\bin\Debug\pets.exe.config
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\bin\Debug\pets.exe
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\bin\Debug\pets.pdb
@@ -119,3 +120,9 @@ C:\Users\svato\Desktop\Програмна інженерія\pets\pets\obj\Debug
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\obj\Debug\pets.csproj.CopyComplete
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\obj\Debug\pets.exe
 C:\Users\svato\Desktop\Програмна інженерія\pets\pets\obj\Debug\pets.pdb
+=======
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\WebDriver.dll
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\WebDriver.xml
+>>>>>>> 336a3f69d6b057326c420818822d75167a0a5f52
+C:\Users\svato\Desktop\Програмна інженерія\pets\pets\bin\Debug\WebDriver.dll
+C:\Users\svato\Desktop\Програмна інженерія\pets\pets\bin\Debug\WebDriver.xml
