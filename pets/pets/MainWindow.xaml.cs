@@ -23,14 +23,19 @@ namespace pets
     public partial class MainWindow : Window
     {
         PetsContext db;
-        public MainWindow() //зображує 
+        public static MainWindow AppWindow;
+        public MainWindow()
         {
             InitializeComponent();
+            AppWindow = this;
+            this.getData();
+        }
 
+        public void getData()
+        {
             db = new PetsContext();
             db.Animals.Load();
             animalsGrid.ItemsSource = db.Animals.Local.ToBindingList();
-
             this.Closing += MainWindow_Closing;
         }
 

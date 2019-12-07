@@ -42,7 +42,8 @@ namespace pets
             if (size == "Small")
             {
                 size_id = 1;
-            }else if (size == "Medium")
+            }
+            else if (size == "Medium")
             {
                 size_id = 2;
             }
@@ -55,17 +56,19 @@ namespace pets
             if (type == "Cat")
             {
                 type_id = 2;
-            }else
+            }
+            else
             {
                 type_id = 1;
             }
             animal.typeId = type_id;
             animal.breed = breed;
             animal.description = description;
-            animal.sex = sex;    
+            animal.sex = sex;
             PetsContext context = new PetsContext();
             context.Animals.Add(animal);
             context.SaveChanges();
+            pets.MainWindow.AppWindow.getData();
             this.Close();
         }
         private void radioButton_Checked(object sender, RoutedEventArgs e)
