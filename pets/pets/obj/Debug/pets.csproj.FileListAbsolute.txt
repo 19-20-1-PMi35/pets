@@ -77,3 +77,5 @@ C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignColors.pdb
 C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\daxak\Desktop\pets\pets\pets\obj\Debug\App.baml
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\WebDriver.dll
+C:\Users\daxak\Desktop\pets\pets\pets\bin\Debug\WebDriver.xml

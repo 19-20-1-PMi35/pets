@@ -15,14 +15,14 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="Auto" Width="Auto">
 
 
     
 
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Margin" Value="20 30 20 10" />
             <Setter Property="Width" Value="100" />
             <Setter Property="Height" Value="30" />
         </Style>
@@ -32,8 +32,8 @@
     <Grid>
        
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="79*"/>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -41,10 +41,10 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Button Background="#8DD1CA" BorderBrush="#8DD1CA"  Foreground="LemonChiffon"  BorderThickness="1" Margin="0,0,0,0" Padding="10,0,10,0" Content="+" Click="AddPet"/>
 
 
-        <materialDesign:Card Padding="15" Margin="16">
+
+        <materialDesign:Card Padding="15" Margin="16" VerticalAlignment="Center" HorizontalAlignment="Center">
             
             <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
             <DataGrid.Columns>
@@ -60,14 +60,15 @@
                     <DataGridTextColumn Binding="{Binding age}" Header="Age" Width="80"/>
                 <DataGridTextColumn Binding="{Binding sex}" Header="Sex" Width="80"/>
                 <DataGridTextColumn Binding="{Binding breed}" Header="Breed" Width="120"/>
-                <DataGridTextColumn Binding="{Binding description}" Header="Description" Width="350"/>
-            </DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding description}" Header="Description" Width="350"/>
+                </DataGrid.Columns>
         </DataGrid>
+            
             
             </materialDesign:Card>
 
                 <StackPanel HorizontalAlignment="Center"  Grid.Row="1" Orientation="Horizontal" Margin="256,0,175,0" Width="280">
-            
+            <Button Background="#8DD1CA" BorderBrush="#8DD1CA" VerticalAlignment="Center"  Foreground="LemonChiffon" BorderThickness="1" Margin="0,0,0,40" Padding="10,0,10,0" Content="+" Click="AddPet"/>
         </StackPanel>
 
         
