@@ -1,6 +1,4 @@
-﻿
-
-<Window x:Class="pets.MainWindow"
+﻿<Window x:Class="pets.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -27,36 +25,36 @@
             <Setter Property="Height" Value="30" />
         </Style>
     </Window.Resources>
-    
 
-    <StackPanel>
+    <ScrollViewer>
+        <StackPanel>
 
-        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-            <Image Stretch="Fill" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Source="C:\Users\Xoma\Desktop\catdog.jpg"/>
-        </Grid>
+            <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+                <Image Stretch="Fill" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Source="C:\Users\svato\Desktop\Програмна інженерія\images\catdog.jpg"/>
+            </Grid>
 
-        <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding name}"  Header="Name" Width="*" IsReadOnly="True">
+            <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding name}"  Header="Name" Width="*" IsReadOnly="True">
+                        
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock" >
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
                     
-                    <DataGridTextColumn.ElementStyle>
-                        <Style TargetType="TextBlock" >
-                        </Style>
-                    </DataGridTextColumn.ElementStyle>
-                
-                </DataGridTextColumn>
-                <DataGridTextColumn Binding="{Binding age}" Header="Age" Width="*" IsReadOnly="True"/>
-                <DataGridTextColumn Binding="{Binding sex}" Header="Sex" Width="*" IsReadOnly="True"/>
-                <DataGridTextColumn Binding="{Binding breed}" Header="Breed" Width="*" IsReadOnly="True"/>
-            </DataGrid.Columns>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding age}" Header="Age" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding sex}" Header="Sex" Width="*" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding breed}" Header="Breed" Width="*" IsReadOnly="True"/>
+                </DataGrid.Columns>
             </DataGrid>
+                
             
-        
 
-        <Button Background="#8DD1CA" BorderBrush="#8DD1CA"  Foreground="LemonChiffon"  BorderThickness="1" Margin="0,0,0,0" Padding="10,0,10,0" Content="+" Click="AddPet"/>
-
+            <Button Background="#8DD1CA" BorderBrush="#8DD1CA"  Foreground="LemonChiffon"  BorderThickness="1" Margin="0,0,0,0" Padding="10,0,10,0" Content="+" Click="AddPet"/>
 
 
-    </StackPanel>
 
+        </StackPanel>
+    </ScrollViewer>
 </Window>
