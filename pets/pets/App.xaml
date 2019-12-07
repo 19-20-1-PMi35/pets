@@ -5,7 +5,9 @@
              xmlns:local="clr-namespace:pets"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+       
         <ResourceDictionary>
+            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />

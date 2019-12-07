@@ -29,15 +29,11 @@
     </Window.Resources>
     
 
-    <Grid>
+    <StackPanel>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-
+        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <Image Stretch="Fill" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Source="C:\Users\Xoma\Desktop\catdog.jpg"/>
+        </Grid>
 
         <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
             <DataGrid.Columns>
@@ -61,6 +57,6 @@
 
 
 
-    </Grid>
+    </StackPanel>
 
 </Window>
