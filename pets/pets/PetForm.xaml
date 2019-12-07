@@ -5,31 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pets"
         mc:Ignorable="d"
-        Title="PetForm" Height="550" Width="800">
+        Title="PetForm" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Margin="0,0,0.333,-0.333">
-            <Label>Name</Label>
-            <TextBox Grid.Row="1" Name="Name" Margin="5"/>
-            <Label>Age</Label>
-            <TextBox Grid.Row="2" Name="Age" Margin="5"/>
-            <Label>Size</Label>
-            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Small" IsChecked="True"/>
-            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Medium" />
-            <RadioButton Checked="Size_Checked" GroupName="Size" Content="Large" />
-            <Label>Sex</Label>
-            <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="F" IsChecked="True"/>
-            <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="M" />
-            <Label>Breed</Label>
-            <TextBox Grid.Row="4" Name="Breed" Margin="5"/>
-            <Label>Type</Label>
-            <RadioButton Checked="Type_Checked" GroupName="Type" Content="Cat" IsChecked="True"/>
-            <RadioButton Checked="Type_Checked" GroupName="Type" Content="Dog" />
-            <Label>Description</Label>
-            <TextBox Grid.Row="5" Name="Description" Margin="5"/>
-            <Button Grid.Row="6" Content="Add Pet" Margin="5" Click="AddPet"/>
-        </StackPanel>
+        <ScrollViewer>
+            <StackPanel>
+                <Label>Name</Label>
+                <TextBox Grid.Row="1" Name="Name" Margin="5"/>
+                <Label>Age</Label>
+                <TextBox Grid.Row="2" Name="Age" Margin="5"/>
+                <Label>Size</Label>
+                <RadioButton Checked="Size_Checked" GroupName="Size" Content="Small" IsChecked="True"/>
+                <RadioButton Checked="Size_Checked" GroupName="Size" Content="Medium" />
+                <RadioButton Checked="Size_Checked" GroupName="Size" Content="Large" />
+                <Label>Sex</Label>
+                <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="F" IsChecked="True"/>
+                <RadioButton Checked="radioButton_Checked" GroupName="Sex" Content="M" />
+                <Label>Breed</Label>
+                <TextBox Grid.Row="4" Name="Breed" Margin="5"/>
+                <Label>Type</Label>
+                <RadioButton Checked="Type_Checked" GroupName="Type" Content="Cat" IsChecked="True"/>
+                <RadioButton Checked="Type_Checked" GroupName="Type" Content="Dog" />
+                <Label>Description</Label>
+                <TextBox Grid.Row="5" Name="Description" Margin="5"/>
+                <Button Grid.Row="6" Content="Add Pet" Margin="5" Click="AddPet"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
