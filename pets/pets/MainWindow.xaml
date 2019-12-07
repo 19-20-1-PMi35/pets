@@ -30,48 +30,37 @@
     
 
     <Grid>
-       
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
 
-
-
-        <materialDesign:Card Padding="15" Margin="16" VerticalAlignment="Center" HorizontalAlignment="Center">
-            
-            <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
+        <DataGrid AutoGenerateColumns="False" x:Name="animalsGrid">
             <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding name}"  Header="Name" Width="120">
-                        
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock" >
-                            <Setter Property="Background" Value="Orange"></Setter>
-                              </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        
-                    </DataGridTextColumn>
-                    <DataGridTextColumn Binding="{Binding age}" Header="Age" Width="80"/>
-                <DataGridTextColumn Binding="{Binding sex}" Header="Sex" Width="80"/>
-                <DataGridTextColumn Binding="{Binding breed}" Header="Breed" Width="120"/>
-                    <DataGridTextColumn Binding="{Binding description}" Header="Description" Width="350"/>
-                </DataGrid.Columns>
-        </DataGrid>
+                <DataGridTextColumn Binding="{Binding name}"  Header="Name" Width="*" IsReadOnly="True">
+                    
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock" >
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                
+                </DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding age}" Header="Age" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding sex}" Header="Sex" Width="*" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding breed}" Header="Breed" Width="*" IsReadOnly="True"/>
+            </DataGrid.Columns>
+            </DataGrid>
             
-            
-            </materialDesign:Card>
-
-                <StackPanel HorizontalAlignment="Center"  Grid.Row="1" Orientation="Horizontal" Margin="256,0,175,0" Width="280">
-            <Button Background="#8DD1CA" BorderBrush="#8DD1CA" VerticalAlignment="Center"  Foreground="LemonChiffon" BorderThickness="1" Margin="0,0,0,40" Padding="10,0,10,0" Content="+" Click="AddPet"/>
-        </StackPanel>
-
         
+
+        <Button Background="#8DD1CA" BorderBrush="#8DD1CA"  Foreground="LemonChiffon"  BorderThickness="1" Margin="0,0,0,0" Padding="10,0,10,0" Content="+" Click="AddPet"/>
+
+
+
     </Grid>
 
 </Window>
