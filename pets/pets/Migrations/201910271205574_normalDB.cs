@@ -11,7 +11,7 @@
             AlterColumn("dbo.Order", "surname", c => c.String(nullable: false));
             AlterColumn("dbo.Order", "pnone", c => c.String(nullable: false));
             AlterColumn("dbo.Size", "size", c => c.String(nullable: false));
-            AlterColumn("dbo.Types", "type", c => c.String(nullable: false));
+            AlterColumn("dbo.Types", "type", c => c.String(nullable: false)); 
         }
         
         public override void Down()
