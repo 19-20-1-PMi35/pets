@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -25,6 +26,7 @@ namespace pets
         public string sex { get; set; }
         public string type { get; set; }
         public string size { get; set; }
+        public byte[] imageData { get; set; }
 
         public PetForm()
         {
@@ -38,6 +40,13 @@ namespace pets
             String description = Description.Text;
             EntAnimal animal = new EntAnimal();
             animal.name = name;
+            //byte[] imageData = null;
+            //using (var binaryReader = new BinaryReader(uploadImage.InputStream))
+            //{
+            //    imageData = binaryReader.ReadBytes(uploadImage.ContentLength);
+            //}
+            //animal.image = imageData;
+            animal.image = imageData;
             animal.age = age;
             int size_id = 0;
             if (size == "Small")
@@ -91,8 +100,15 @@ namespace pets
         private void btnOpenFile_Click(Object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == true)
-                txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
+            if (openFileDialog.ShowDialog() == true) {
+                var imageStream = openFileDialog.OpenFile();
+
+                imageData = Encoding.Default.GetBytes(new StreamReader(imageStream).ReadToEnd());
+                imageStream.Position = 0;
+                var str = new StreamReader(imageStream).ReadToEnd();
+                txtEditor.Text = str;
+            } 
+        
         }
     }
 }
